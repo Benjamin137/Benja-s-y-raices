@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 import { AdminLayout } from "./components/admin/AdminLayout";
 import { ClientLayout } from "./components/client/ClientLayout";
 import { Login } from "./components/Login";
@@ -9,7 +9,7 @@ import { ClientProperties } from "./components/client/ClientProperties";
 import { ClientPropertyDetail } from "./components/client/ClientPropertyDetail";
 import { ClientPurchases } from "./components/client/ClientPurchases";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     Component: Login,
